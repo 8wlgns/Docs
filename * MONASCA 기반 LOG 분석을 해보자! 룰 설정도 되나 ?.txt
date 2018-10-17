@@ -1,0 +1,26 @@
+* MONASCA 기반 LOG 분석을 해보자! 룰 설정도 되나 ?
+
+- Docker CE 버전 설치하기
+  https://nickjanetakis.com/blog/docker-tip-39-installing-docker-ce-on-redhat-rhel-7x
+  (selinux-container 는 나와 있는 링크에 최신꺼를 설치했음.)
+
+- Log Agent: filebeat
+   ||
+   \/
+- Log Server: Logstash
+   ||
+   ||
+   ||
+   \/
+- Log API: Monasca Log API 
+     ::
+     ::
+     ::
+     \/
+- Kafka & Zookeeper
+  얘가 로그를 잘 넣어주는?? 기계손 같은 파이프라인녀석 인가보다,,
+        ::      
+        ::
+        ::
+        \/
+       Rule / Alarm / Action 이 가능한가??
